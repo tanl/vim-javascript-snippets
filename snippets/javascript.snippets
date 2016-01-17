@@ -60,7 +60,7 @@ snippet ter
 # switch
 snippet switch
 	switch (${1:expression}) {
-		case '${3:case}':
+		case "${3:case}":
 			${4}
 			break;
 		${0}
@@ -69,7 +69,7 @@ snippet switch
 	}
 # case
 snippet case
-	case '${1:case}':
+	case "${1:case}":
 		${2}
 		break;
 	${0}
@@ -91,7 +91,7 @@ snippet tryf
 	}
 # throw Error
 snippet terr
-	throw new Error('${1:error message}')
+	throw new Error("${1:error message}")
 # return
 snippet ret
 	return ${0:result};
@@ -158,7 +158,7 @@ snippet sing
 
 		return instance;
 	}
-# Crockford's object function
+# Crockford"s object function
 snippet obj
 	function object(o) {
 		function F() {}
@@ -228,22 +228,22 @@ snippet jsons
 
 # Get elements
 snippet get
-	getElementsBy${1:TagName}('${0}')
+	getElementsBy${1:TagName}("${0}")
 # Get element
 snippet gett
-	getElementBy${1:Id}('${0}')
+	getElementBy${1:Id}("${0}")
 # Elements by class
 snippet by.
-	${1:document}.getElementsByClassName('${0:class}')
+	${1:document}.getElementsByClassName("${0:class}")
 # Element by ID
 snippet by#
-	${1:document}.getElementById('${0:element ID}')
+	${1:document}.getElementById("${0:element ID}")
 # Query selector
 snippet qs
-	${1:document}.querySelector('${0:CSS selector}')
+	${1:document}.querySelector("${0:CSS selector}")
 # Query selector all
 snippet qsa
-	${1:document}.querySelectorAll('${0:CSS selector}')
+	${1:document}.querySelectorAll("${0:CSS selector}")
 
 # Debugging
 snippet de
@@ -272,7 +272,7 @@ snippet cdir
 
 # Misc
 
-# 'use strict';
+# "use strict";
 snippet us
 	"use strict";
 
